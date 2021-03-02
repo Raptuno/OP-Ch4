@@ -4,6 +4,8 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 
+import java.util.*;
+
 public class SwtMain {
 
 	protected Shell shlReto4;
@@ -43,7 +45,10 @@ public class SwtMain {
 		shlReto4 = new Shell();
 		shlReto4.setSize(450, 300);
 		shlReto4.setText("Reto 4");
-
+		
+		for(int i=0; i<4; i++) {
+			
+		}
 	}
 
 }
