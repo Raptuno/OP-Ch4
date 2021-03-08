@@ -9,6 +9,8 @@ import java.util.*;
 public class SwtMain {
 
 	protected Shell shlReto4;
+	private Datos s;
+	private Metodos hmi;
 
 	/**
 	 * Launch the application.
@@ -42,13 +44,13 @@ public class SwtMain {
 	 * Create contents of the window.
 	 */
 	protected void createContents() {
+		s=new Datos();
+		hmi=new Metodos();
 		shlReto4 = new Shell();
 		shlReto4.setSize(450, 300);
 		shlReto4.setText("Reto 4");
 		
-		for(int i=0; i<4; i++) {
-			
-		}
+		hmi.printer(s.valArrays, s.sab, s.semesters);
 	}
 
 }
